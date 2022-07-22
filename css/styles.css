@@ -312,6 +312,13 @@ button {
   padding-bottom: 200px;
   background-color: var(--background-dark-color);
   text-align: center;
+  background-color: #C4C4C4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-size: 1600px 600px;
+ 
 }
 
 .header-section {
@@ -331,6 +338,11 @@ button {
   gap: 8px;
   display: flex;
   justify-content: center;
+}
+
+.description-icon {
+width: 270px;
+height: 120px;
 }
 
 .section-work {
