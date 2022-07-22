@@ -340,9 +340,20 @@ button {
   justify-content: center;
 }
 
-.description-icon {
+.description-icon {display:block;
 width: 270px;
 height: 120px;
+color: var(--backgronud-button-color);
+background-color: var(--backgronud-button-color);
+fill: red;
+}
+
+.description-list {
+  display: block;
+  width: 270px;
+  height: 120px;
+  color: var(--backgronud-button-color);
+  fill: red;
 }
 
 .section-work {
