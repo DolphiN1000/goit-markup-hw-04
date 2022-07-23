@@ -13,6 +13,7 @@
   --backgronud-button-color: #f5f4fa;
   --button-hero-hover-color: #188ce8;
   --header-border-color: #ececec;
+  --social-icon-color: #AFB1B8;
 }
 
 body {
@@ -128,6 +129,8 @@ button {
   color: var(--current-color);
 }
 .contact-nav-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -137,6 +140,32 @@ button {
 .contact-nav-link:hover,
 .contact-nav-link:focus {
   color: var(--current-color);
+  
+}
+
+.mail-item {
+  fill: currentcolor;
+  width: 16px; 
+  height: 12px;
+
+}
+
+.mail-item {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.tel-link {
+  
+}
+
+.tel-item {
+  fill: currentColor;
+  width: 10px;
+  height: 12px;
+  margin-right: 10px;
 }
 
 .contact-footer-link {
@@ -148,6 +177,7 @@ button {
 .contact-footer-link:hover,
 .contact-footer-link:focus {
   color: var(--current-color);
+  fill: var(--current-color);
 }
 
 .header-nav-site {
@@ -172,6 +202,12 @@ button {
   padding: 0;
   margin-right: 93px;
 }
+
+.contact-item {
+  /* display: flex;
+   */
+}
+
 .contact-item + .contact-item {
   margin-left: 50px;
 }
@@ -231,12 +267,19 @@ button {
 
 .header-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .description-item {
+  display: flex;
   gap: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .list-workcom {
@@ -282,8 +325,11 @@ button {
 }
 
 .description-list {
-  gap: 30px;
+display: block;
+gap: 30px;
 }
+
+
 .text-transform {
   text-transform: uppercase;
 }
@@ -340,21 +386,16 @@ button {
   justify-content: center;
 }
 
-.description-icon {display:block;
+.description-icon {
 width: 270px;
 height: 120px;
-color: var(--backgronud-button-color);
-background-color: var(--backgronud-button-color);
-fill: red;
+align-items: center;
+
 }
 
-.description-list {
-  display: block;
-  width: 270px;
-  height: 120px;
-  color: var(--backgronud-button-color);
-  fill: red;
-}
+
+
+
 
 .section-work {
   background-color: var(--main-light-color);
@@ -382,12 +423,44 @@ fill: red;
   font-size: 16px;
   line-height: 1.18;
   color: var(--main-color);
+  margin-bottom: 16px;
 }
 
 .name-prof {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  padding-left: 0;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+ 
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--social-icon-color);
+  background-color: #ffffff;
+  
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--main-light-color);
+  background-color: var(--current-color);
 }
 
 .visually-hidden {
