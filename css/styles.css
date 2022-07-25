@@ -616,6 +616,7 @@ button {
   justify-content: center;
   width: 170px;
   height: 92px;
+  fill: inherit;
 
 
 
