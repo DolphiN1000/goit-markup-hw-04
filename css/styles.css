@@ -161,7 +161,7 @@ button {
 .tel-item {
   fill: currentColor;
   width: 10px;
-  height: 12px;
+  height: 16px;
   margin-right: 10px;
 }
 
@@ -236,7 +236,7 @@ button {
 
 .portfolio-item {
   width: 370px;
-  border: 1px solid rgba(238, 238, 238, 1);
+
 }
 
 .hero-button {
@@ -290,8 +290,15 @@ button {
   
   background-color: var(--main-light-color); */
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
+
+
+.portfolio {
+  display: block;
+  border: 1px solid rgba(238, 238, 238, 1);
+}
+
+.portfolio:hover,
+.portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -438,7 +445,7 @@ button {
 }
 
 .footer-section {
-  display: flex;
+  /* display: flex; */
   padding: 60px 0;
   background-color: var(--background-dark-color);
 }
@@ -475,7 +482,7 @@ button {
 .social-list-icon {
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  /* fill: currentColor; */
 }
 
 .social-list-link {
@@ -513,6 +520,7 @@ button {
 
 .portfolio-content {
   padding: 20px 24px;
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .portfolio-title {
@@ -554,9 +562,9 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
-.footer-conect {
+/* .footer-conect {
   display: block;
-}
+} */
 
 .footer-conect-title {
   text-transform: uppercase;
@@ -569,11 +577,12 @@ button {
   display: flex;
   gap: 10px;
   padding: 0;
+  margin-top: 20px;
 }
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .footer-contact {
   margin-right: 70px;
@@ -593,17 +602,6 @@ button {
   display: flex;
 }
 
-.clients-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--social-icon-color);
-  border-radius: 4px;
-  fill: var(--social-icon-color);
-}
-
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -619,5 +617,12 @@ button {
   justify-content: center;
   width: 170px;
   height: 92px;
+  border: 1px solid var(--social-icon-color);
+  border-radius: 4px;
+  fill: var(--social-icon-color);
+}
+.clients-icon {
   fill: inherit;
+  /* fill: currentColor; */
+
 }
