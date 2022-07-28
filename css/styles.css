@@ -622,7 +622,7 @@ button {
   fill: var(--social-icon-color);
 }
 .clients-icon {
-  fill: inherit;
+  /* fill: inherit; */
   /* fill: currentColor; */
 
 }
